@@ -23,7 +23,7 @@
 	{
 		use PasswordHash;
 
-		public function generatePasswordHash($password)
+		public function generatePasswordHash($password, $cost = NULL)
 		{
 			return $this->hashPassword($password);
 		}
